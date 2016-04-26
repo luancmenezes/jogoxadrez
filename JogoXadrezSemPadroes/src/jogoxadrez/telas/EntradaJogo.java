@@ -1,9 +1,3 @@
-/*
- * EntradaJogo.java
- *
- * Created on 17 de Março de 2009, 14:42
- */
-
 package jogoxadrez.telas;
 
 import jogoxadrez.modelos.*;

@@ -1,9 +1,3 @@
-/*
- * framePrincipal.java
- *
- * Created on 17 de Março de 2009, 10:34
- */
-
 package jogoxadrez.telas;
 
 import java.awt.Color;
