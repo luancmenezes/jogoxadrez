@@ -46,6 +46,7 @@ public class FramePrincipal extends javax.swing.JFrame {
         JMenuSair = new javax.swing.JMenuItem();
         JMenuSobre = new javax.swing.JMenu();
         JMenuInformacoes = new javax.swing.JMenuItem();
+        JMenuSobre1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -93,6 +94,9 @@ public class FramePrincipal extends javax.swing.JFrame {
         JMenuSobre.add(JMenuInformacoes);
 
         jMenuBar1.add(JMenuSobre);
+
+        JMenuSobre1.setText("Undo");
+        jMenuBar1.add(JMenuSobre1);
 
         setJMenuBar(jMenuBar1);
 
@@ -200,6 +204,7 @@ public Jogador getJogador(int indice){
     private javax.swing.JMenu JMenuJogo;
     private javax.swing.JMenuItem JMenuSair;
     private javax.swing.JMenu JMenuSobre;
+    private javax.swing.JMenu JMenuSobre1;
     private javax.swing.JMenu JMenuXadrez;
     private javax.swing.JMenuItem JMenuXadrezBasico;
     private javax.swing.JMenuBar jMenuBar1;

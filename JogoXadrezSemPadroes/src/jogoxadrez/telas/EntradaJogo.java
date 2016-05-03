@@ -34,10 +34,8 @@ public class EntradaJogo extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        jButton1.setIcon(new javax.swing.ImageIcon("D:\\Faculdade\\Sistemas distribuidos\\Projeto\\NovoJogoXadrezDama\\imagens\\frb.gif")); // NOI18N
-
-        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
         jTextField1.setEditable(false);
+        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
         jTextField1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setText("JOGOS - DAMA E XADREZ");
@@ -127,16 +125,20 @@ public class EntradaJogo extends javax.swing.JPanel {
 
 private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
     if(!this.txtJogador1.getText().equals("")&&!this.txtJogador2.getText().equals("")){
+        if(this.txtJogador1.getText().length()>=4 && this.txtJogador2.getText().length()>=4){
         this.setVisible(false);
         fp.habilitarMenu();
+        
         Jogador j1=new Jogador(this.txtJogador1.getText());
         j1.setPeca("Branco");
+        
         Jogador j2=new Jogador(this.txtJogador2.getText());
+        
         j2.setPeca("Preto");
         fp.setNovoJogador(j1);
         fp.setNovoJogador(j2);    
     }
-    
+   }
 }//GEN-LAST:event_btEnviarActionPerformed
 
 

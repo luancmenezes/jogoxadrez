@@ -210,6 +210,8 @@ public class Tabuleiro extends javax.swing.JPanel {
             this.remove(posicao);
             
             //this.peca.setLocation(posicao.getLocation());
+            
+            //Pecas PRETAS
             this.add(this.peca);
             this.add(vazio);
             
@@ -277,6 +279,7 @@ public class Tabuleiro extends javax.swing.JPanel {
         
         if(peao.isMexeu()){
             qtdCasas = 1;
+            //AdcionarcreateMemento()
         }
         
         while(flag && jogadas < qtdCasas){
@@ -845,7 +848,7 @@ public class Tabuleiro extends javax.swing.JPanel {
     private int getPeca(int x,int y){
         int temp=-1;
         for(int i=0;i<this.pecas.size();i++){
-            if(this.pecas.get(i).getX()==x&&this.pecas.get(i).getY()==y){
+            if(this.pecas.get(i).getX() == x && this.pecas.get(i).getY() == y){
                 temp=i;
             }
         }
